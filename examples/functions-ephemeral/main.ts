@@ -1,8 +1,8 @@
 import { Construct } from "constructs";
 import { App, Fn, LocalBackend, TerraformOutput, TerraformStack, Testing } from "cdktn";
-import { AwsProvider } from "./.gen/providers/aws/provider";
-import { AwsProviderFunctions } from "./.gen/providers/aws/provider-functions";
-import { EphemeralAwsSecretsmanagerRandomPassword } from "./.gen/providers/aws/ephemeral-aws-secretsmanager-random-password";
+import { AwsProvider } from "./.gen/providers/aws/provider/index.ts";
+import { AwsProviderFunctions } from "./.gen/providers/aws/provider-functions/index.ts";
+import { EphemeralAwsSecretsmanagerRandomPassword } from "./.gen/providers/aws/ephemeral-aws-secretsmanager-random-password/index.ts";
 
 /**
  * Exercises AWS provider-protocol features generated from Terraform 1.15.x schema:

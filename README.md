@@ -18,7 +18,7 @@ It also includes an `examples/l2-*` set that ports real `aws-cdk-lib` L2 constru
 
 - `pnpm`
 - `mise` with `terraform@1.15.7` and `opentofu@1.12.3` available
-- a built cdk-terrain PR checkout; by default scripts expect `/Users/vincentdesmet/cdktn/cdk-terrain` (override with `CDKTN_REPO`)
+- a built cdk-terrain PR checkout; by default scripts expect `../../../cdk-terrain` (override with `CDKTN_REPO`)
 - AWS credentials/profile for Terraform planning; default profile is `tcons-hermes`, override with `AWS_PROFILE=...`. If you're using `aws-vault exec <profile> --no-session -- ...` instead, see the credential-precedence note below — don't also set `AWS_PROFILE` to a profile Terraform should resolve itself.
 
 ## Quick check

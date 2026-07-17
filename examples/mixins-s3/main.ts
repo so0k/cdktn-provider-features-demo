@@ -1,7 +1,7 @@
 import { Construct, IConstruct, IMixin } from "constructs";
 import { App, LocalBackend, TerraformResource, TerraformStack, Testing } from "cdktn";
-import { AwsProvider } from "./.gen/providers/aws/provider";
-import { S3Bucket } from "./.gen/providers/aws/s3-bucket";
+import { AwsProvider } from "./.gen/providers/aws/provider/index.ts";
+import { S3Bucket } from "./.gen/providers/aws/s3-bucket/index.ts";
 
 /**
  * Verifies the "Mixins" concept doc's provider-agnostic example (docs/concept-mixins,

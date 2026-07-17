@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-const fs = require('node:fs');
-const path = require('node:path');
+import fs from 'node:fs';
+import path from 'node:path';
 
 const schemaPath = process.argv[2] || path.join(process.cwd(), 'schema/aws-provider-schema.json');
 const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));

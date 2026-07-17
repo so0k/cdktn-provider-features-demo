@@ -1,9 +1,9 @@
 import { Construct } from "constructs";
 import { App, LocalBackend, TerraformOutput, TerraformStack, Testing } from "cdktn";
-import { AwsccProvider } from "./.gen/providers/awscc/provider";
-import { SecretsmanagerSecret } from "./.gen/providers/awscc/secretsmanager-secret";
-import { CfncompatProvider } from "./.gen/providers/cfncompat/provider";
-import { CfncompatProviderFunctions } from "./.gen/providers/cfncompat/provider-functions";
+import { AwsccProvider } from "./.gen/providers/awscc/provider/index.ts";
+import { SecretsmanagerSecret } from "./.gen/providers/awscc/secretsmanager-secret/index.ts";
+import { CfncompatProvider } from "./.gen/providers/cfncompat/provider/index.ts";
+import { CfncompatProviderFunctions } from "./.gen/providers/cfncompat/provider-functions/index.ts";
 
 /**
  * Port of aws-secretsmanager.Secret's owned-secret name recovery

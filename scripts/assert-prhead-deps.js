@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-const fs = require('node:fs');
-const path = require('node:path');
+import fs from 'node:fs';
+import path from 'node:path';
 
-const repo = path.resolve(process.env.CDKTN_REPO || '/Users/vincentdesmet/cdktn/cdk-terrain');
+const repo = path.resolve(process.env.CDKTN_REPO || '../../../cdk-terrain');
 const expectedCdktn = path.resolve(repo, 'packages/cdktn');
 const lockPath = path.join(process.cwd(), 'pnpm-lock.yaml');
 const lock = fs.readFileSync(lockPath, 'utf8');

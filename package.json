@@ -4,7 +4,7 @@
   "private": true,
   "description": "Demo scenarios for CDK Terrain PR #296 provider plugin-protocol feature bindings generated from current Terraform/OpenTofu schemas.",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "use:prhead": "node scripts/use-prhead-cdktn.js",
     "schema:aws": "bash scripts/capture-aws-schema.sh",
@@ -33,13 +33,13 @@
     "check": "pnpm run generate:aws && pnpm run synth:all"
   },
   "dependencies": {
-    "cdktn": "file:/Users/vincentdesmet/cdktn/cdk-terrain/packages/cdktn",
+    "aws-cdk-lib": "^2.261.0",
+    "cdktn": "file:../cdk-terrain/packages/cdktn",
     "constructs": "10.6.0"
   },
   "devDependencies": {
-    "@types/node": "20.19.1",
-    "ts-node": "10.9.2",
-    "typescript": "5.4.5"
+    "@types/node": "22.20.1",
+    "typescript": "6.0.3"
   },
   "packageManager": "pnpm@11.5.2"
 }

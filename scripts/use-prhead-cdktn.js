@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-const { spawnSync } = require('node:child_process');
-const fs = require('node:fs');
-const path = require('node:path');
+import { spawnSync } from 'node:child_process';
+import fs from 'node:fs';
+import path from 'node:path';
 
 const repo = process.env.CDKTN_REPO;
 if (!repo) {

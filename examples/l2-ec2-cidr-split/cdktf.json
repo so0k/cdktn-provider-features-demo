@@ -1,6 +1,6 @@
 {
   "language": "typescript",
-  "app": "pnpm exec ts-node main.ts",
+  "app": "node main.ts",
   "terraformProviders": [
     "awscc",
     "cdktn-io/cfncompat"

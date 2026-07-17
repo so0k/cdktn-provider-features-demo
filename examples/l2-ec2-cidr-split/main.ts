@@ -1,10 +1,10 @@
 import { Construct } from "constructs";
 import { App, LocalBackend, TerraformOutput, TerraformStack, Testing } from "cdktn";
-import { AwsccProvider } from "./.gen/providers/awscc/provider";
-import { Ec2Vpc } from "./.gen/providers/awscc/ec2-vpc";
-import { Ec2Subnet } from "./.gen/providers/awscc/ec2-subnet";
-import { CfncompatProvider } from "./.gen/providers/cfncompat/provider";
-import { CfncompatProviderFunctions } from "./.gen/providers/cfncompat/provider-functions";
+import { AwsccProvider } from "./.gen/providers/awscc/provider/index.ts";
+import { Ec2Vpc } from "./.gen/providers/awscc/ec2-vpc/index.ts";
+import { Ec2Subnet } from "./.gen/providers/awscc/ec2-subnet/index.ts";
+import { CfncompatProvider } from "./.gen/providers/cfncompat/provider/index.ts";
+import { CfncompatProviderFunctions } from "./.gen/providers/cfncompat/provider-functions/index.ts";
 
 /**
  * Port of aws-ec2's CIDR-splitting helper

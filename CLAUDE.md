@@ -11,7 +11,7 @@ This is not a library; it has no unit tests. "Correctness" here means: schema ca
 ## Required environment before anything works
 
 - `pnpm`, plus `mise` with `terraform@1.15.7` and `opentofu@1.12.3` available.
-- `CDKTN_REPO` — path to a built `cdk-terrain` PR-head checkout (default in scripts: `/Users/vincentdesmet/cdktn/cdk-terrain`). This must contain a built `packages/cdktn` and `packages/cdktn-cli/bundle/bin/cdktn.js`.
+- `CDKTN_REPO` — path to a built `cdk-terrain` PR-head checkout (default in scripts: `../../../cdk-terrain`). This must contain a built `packages/cdktn` and `packages/cdktn-cli/bundle/bin/cdktn.js`.
 - `AWS_PROFILE` for Terraform planning (default `tcons-hermes`), or run under `aws-vault exec <profile> --no-session -- ...` — see the `aws-vault` note below if doing the latter.
 - `TERRAFORM_BINARY_NAME` — set this to the `mise`-resolved terraform/opentofu binary before running schema/plan commands, e.g. `export TERRAFORM_BINARY_NAME=$(mise x terraform@1.15.7 -- which terraform)`.
 

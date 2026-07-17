@@ -1,11 +1,11 @@
 import { Construct } from "constructs";
 import { App, LocalBackend, TerraformOutput, TerraformStack, Testing } from "cdktn";
-import { AwsProvider } from "./.gen/providers/aws/provider";
-import { DataAwsRegion } from "./.gen/providers/aws/data-aws-region";
-import { AwsccProvider } from "./.gen/providers/awscc/provider";
-import { KinesisStream, kinesisStreamStreamEncryptionToTerraform } from "./.gen/providers/awscc/kinesis-stream";
-import { CfncompatProvider } from "./.gen/providers/cfncompat/provider";
-import { CfncompatProviderFunctions } from "./.gen/providers/cfncompat/provider-functions";
+import { AwsProvider } from "./.gen/providers/aws/provider/index.ts";
+import { DataAwsRegion } from "./.gen/providers/aws/data-aws-region/index.ts";
+import { AwsccProvider } from "./.gen/providers/awscc/provider/index.ts";
+import { KinesisStream, kinesisStreamStreamEncryptionToTerraform } from "./.gen/providers/awscc/kinesis-stream/index.ts";
+import { CfncompatProvider } from "./.gen/providers/cfncompat/provider/index.ts";
+import { CfncompatProviderFunctions } from "./.gen/providers/cfncompat/provider-functions/index.ts";
 
 /**
  * Port of aws-kinesis.Stream's default-encryption logic

@@ -8,8 +8,8 @@ import {
   TerraformStack,
   Testing,
 } from "cdktn";
-import { AwsProvider } from "./.gen/providers/aws/provider";
-import { Instance } from "./.gen/providers/aws/instance";
+import { AwsProvider } from "./.gen/providers/aws/provider/index.ts";
+import { Instance } from "./.gen/providers/aws/instance/index.ts";
 
 /**
  * Verifies the docs' "configure with a mixin, validate with an aspect" pairing.

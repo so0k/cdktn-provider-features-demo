@@ -1,4 +1,4 @@
 [tools]
-node = "22"
+node = "22.18"
 opentofu = "1.12"
 terraform = "1.15"

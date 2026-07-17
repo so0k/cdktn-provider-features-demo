@@ -1,7 +1,7 @@
 import { Construct } from "constructs";
 import { App, LocalBackend, TerraformOutput, TerraformStack, Testing } from "cdktn";
-import { AwsProvider } from "./.gen/providers/aws/provider";
-import { AwsProviderFunctions } from "./.gen/providers/aws/provider-functions";
+import { AwsProvider } from "./.gen/providers/aws/provider/index.ts";
+import { AwsProviderFunctions } from "./.gen/providers/aws/provider-functions/index.ts";
 
 class AwsProviderFunctionsOnlyStack extends TerraformStack {
   constructor(scope: Construct, id: string) {

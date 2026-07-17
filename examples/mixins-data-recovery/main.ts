@@ -1,8 +1,8 @@
 import { Construct, IConstruct, IMixin } from "constructs";
 import { App, LocalBackend, TerraformStack, Testing } from "cdktn";
-import { AwsProvider } from "./.gen/providers/aws/provider";
-import { S3Bucket } from "./.gen/providers/aws/s3-bucket";
-import { DynamodbTable } from "./.gen/providers/aws/dynamodb-table";
+import { AwsProvider } from "./.gen/providers/aws/provider/index.ts";
+import { S3Bucket } from "./.gen/providers/aws/s3-bucket/index.ts";
+import { DynamodbTable } from "./.gen/providers/aws/dynamodb-table/index.ts";
 
 /**
  * Verifies the docs' multi-resource-type mixin example: one mixin, one supports()
